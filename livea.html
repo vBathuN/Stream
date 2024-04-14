@@ -22,6 +22,7 @@
     player = new YT.Player('ytVid', {
         events: {
           'onReady': function(event) {
+             event.target.Unmute();
             event.target.playVideo();
           }
         }
